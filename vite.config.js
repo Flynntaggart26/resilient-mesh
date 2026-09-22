@@ -5,6 +5,9 @@ import { defineConfig } from 'vite'
 
 // https://vite.dev/config/
 export default defineConfig({
+  // GitHub Pages project site lives under /<repo>/ — relative base keeps
+  // assets, SW scope, and manifest working both locally and in production.
+  base: '/resilient-mesh/',
   plugins: [
     react(),
     tailwindcss(),
