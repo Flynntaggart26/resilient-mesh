@@ -1,0 +1,21 @@
+@import "tailwindcss";
+@import "leaflet/dist/leaflet.css";
+
+/* Minimal global tweaks — Tailwind handles the rest. */
+html,
+body,
+#root {
+  height: 100%;
+}
+
+body {
+  @apply bg-slate-950 text-slate-100 antialiased;
+}
+
+/* Leaflet map sits inside a dark card — fixed height so tiles render. */
+.leaflet-container {
+  height: 100%;
+  width: 100%;
+  background: #020617;
+  font: inherit;
+}
